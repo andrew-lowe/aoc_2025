@@ -63,19 +63,3 @@ fn check_id_validity(num_str: String) -> bool {
     }
     return false
 }
-
-fn count_digits(mut n: i64) -> i64 {
-    if n == 0 {
-        return 1
-    }
-
-    let mut count = n.abs();
-
-    while n > 0 {
-        n /= 10;
-        count += 1
-    }
-
-    return count;
-
-}
